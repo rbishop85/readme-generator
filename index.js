@@ -16,42 +16,57 @@ const questions = [
         type: 'input',
         message: 'Write a short description of the project.',
         name: 'description',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'input',
         message: 'What is the name/s of the project creator/s?',
         name: 'creators',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'input',
         message: 'What is your email address?',
         name: 'email',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'input',
         message: 'What is github username?',
         name: 'github',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'input',
         message: 'What steps are required to install your project?',
         name: 'installation',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'input',
         message: 'What are the usage instructions for running your project?',
         name: 'usage',
+        prefix: '-',
+        validate: Boolean,
     },
     {
         type: 'list',
         message: 'What type of license does your project have?',
         name: 'license',
-        choices: ["MIT", "Apache 2.0", "GPL v3", "BSD 3", "None"]
+        choices: ["MIT", "Apache 2.0", "GPL v3", "BSD 3", "None"],
+        prefix: '-',
     },
     {
         type: 'input',
         message: 'Any notes for people that wish to contribute to your project?',
         name: 'contribute',
+        prefix: '-',
+        validate: Boolean,
     },
 
 

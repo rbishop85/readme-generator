@@ -40,25 +40,25 @@ Question, comments, suggestions and constructive criticism always welcome.
 
 ## Installation:
 
-${installation}
+${data.installation}
 
 ---
 
 ## Usage:
 
-${usage}
+${data.usage}
 
 ---
 
 ## License:
 
-${license}
+${data.license}
 
 ---
 
 ## Contributing:
 
-${contribute}
+${data.contribute}
 
 `;
 }
