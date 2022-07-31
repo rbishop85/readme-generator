@@ -37,7 +37,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is github username?',
+        message: 'What is your github username?',
         name: 'github',
         prefix: '-',
         validate: Boolean
