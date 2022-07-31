@@ -10,112 +10,94 @@ const questions = [
         message: 'What is your project title?',
         name: 'title',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
         message: 'Write a short description of the project.',
         name: 'description',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
         message: 'What is the name/s of the project creator/s?',
         name: 'creators',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
         message: 'What is your email address?',
         name: 'email',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
         message: 'What is github username?',
         name: 'github',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
-        message: 'What steps are required to install your project?',
+        message: 'What commands should be used to install your project?',
         name: 'installation',
+        default: 'npm i',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
     },
     {
         type: 'input',
         message: 'What are the usage instructions for running your project?',
         name: 'usage',
         prefix: '-',
-        validate: Boolean,
+        validate: Boolean
+    },
+    {
+        type: 'input',
+        message: 'What command should be used to run tests?',
+        name: 'tests',
+        default: 'npm test',
+        prefix: '-',
+        validate: Boolean
     },
     {
         type: 'list',
         message: 'What type of license does your project have?',
         name: 'license',
-        // choices: ["MIT", "Apache 2.0", "GPL v3", "BSD 3", "None"],
         choices: [
             {
-                name: "MIT",
-                value: "MIT"
+                name: 'MIT',
+                value: 'MIT'
             },
             {
-                name: "Apache 2.0",
-                value: "Apache-2.0"
+                name: 'Apache 2.0',
+                value: 'Apache-2.0'
             },
             {
-                name: "GPL v3",
-                value: "GPL-3.0"
+                name: 'GPL v3',
+                value: 'GPL-3.0'
             },
             {
-                name: "BSD 3",
-                value: "BSD-3-Clause"
+                name: 'BSD 3',
+                value: 'BSD-3-Clause'
             },
             {
-                name: "None",
-                value: "None"
+                name: 'None',
+                value: 'None'
             }
         ],
-        prefix: '-',
+        prefix: '-'
     },
     {
         type: 'input',
         message: 'Any notes for people that wish to contribute to your project?',
         name: 'contribute',
         prefix: '-',
-        validate: Boolean,
-    },
-
-
-
-
-    // {
-    //     type: 'list',
-    //     message: 'Would You like to include an image?',
-    //     name: 'imageTrue',
-    //     choices: ["Yes", "No"]
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter the path to the image you wish to use.',
-    //     name: 'imagePath',
-    //     when: function(answers) {
-    //         return answers.imageTrue === "Yes";
-    //     }
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter descriptive alt text for the image.',
-    //     name: 'imageText',
-    //     when: function(answers) {
-    //         return answers.imageTrue === "Yes";
-    //     }
-    // },
+        validate: Boolean
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -136,7 +118,7 @@ Press 'Ctrl + C' or '⌘ Cmd + C' at any time to exit.
         type: 'list',
         message: 'Are you ready to begin?',
         name: 'begin',
-        choices: ["Yes", "No"],
+        choices: ['Yes', 'No'],
         prefix: '-'
         }
     ])

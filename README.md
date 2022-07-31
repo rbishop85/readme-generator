@@ -12,10 +12,8 @@ https://www.npmjs.com/package/inquirer
  - Make start function that explains how to exit "CTRL + C" and asks the user if they want to begin, selecting no cancels out while selecting yes begins the question process.
  <!-- http://www.penandpaperprogrammer.com/blog/2018/12/16/repeating-questions-with-inquirerjs --> <- ?
 
-nesting: https://www.youtube.com/watch?v=uRCLFIQjo14
 
 
-split an array where there's a comma?
 
 validate: Boolean to require question response
 

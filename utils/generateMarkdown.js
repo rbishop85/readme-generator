@@ -17,22 +17,19 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  // if(license === "MIT") {
-  //   return "MIT"
-  // } else if(license === "Apache 2.0") {
-  //   return "Apache-2.0"
-  // } else if(license === "GPL v3") {
-  //   return "GPL-3.0"
-  // } else if(license === "BSD 3") {
-  //   return "BSD-3-Clause"
-  // } else {
-  // return ""
-  // }
   if(license === "None") {
     return ""
   } else {
     return license
   }
+}
+
+function renderLicenseShortcut(license) {
+  if(license === "None") {
+    return "* [Contributing](#contributing)";
+  } else 
+  return `* [License](#license)
+* [Contributing](#contributing)`
 }
 
 // TODO: Create a function that returns the license section of README
@@ -71,15 +68,27 @@ Question, comments, suggestions and constructive criticism always welcome.
 ## Contents:
 
 * [Installation](#installation)
+* [Tests](#tests)
 * [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
+${renderLicenseShortcut(data.license)}
 
 ---
 
 ## Installation:
 
+To install all dependencies required for app, run:
+\`\`\`
 ${data.installation}
+\`\`\`
+
+---
+
+## Tests:
+
+To run tests, use the following command:
+\`\`\`
+${data.tests}
+\`\`\`
 
 ---
 
