@@ -17,6 +17,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  // If user selected none, then blank string is returned, otherwise the value of the selected license is returned.
   if(license === "None") {
     return ""
   } else {
@@ -24,6 +25,7 @@ function renderLicenseLink(license) {
   }
 }
 
+// License will only render on the shortcut list if the user selected a license to be used.
 function renderLicenseShortcut(license) {
   if(license === "None") {
     return "* [Contributing](#contributing)";
@@ -47,8 +49,8 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+// Uses data object received from inquirer to generate the readme contents
 function generateMarkdown(data) {
-  console.log(data);
   return `
 # ${data.title}
 
@@ -105,4 +107,5 @@ ${data.contribute}
 `;
 }
 
+// Exports the generateMarkdown function as the function to be called via connection from index.js.
 module.exports = generateMarkdown;
