@@ -58,7 +58,29 @@ const questions = [
         type: 'list',
         message: 'What type of license does your project have?',
         name: 'license',
-        choices: ["MIT", "Apache 2.0", "GPL v3", "BSD 3", "None"],
+        // choices: ["MIT", "Apache 2.0", "GPL v3", "BSD 3", "None"],
+        choices: [
+            {
+                name: "MIT",
+                value: "MIT"
+            },
+            {
+                name: "Apache 2.0",
+                value: "Apache-2.0"
+            },
+            {
+                name: "GPL v3",
+                value: "GPL-3.0"
+            },
+            {
+                name: "BSD 3",
+                value: "BSD-3-Clause"
+            },
+            {
+                name: "None",
+                value: "None"
+            }
+        ],
         prefix: '-',
     },
     {
@@ -105,16 +127,17 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    console.log("");
-    console.log("Welcome to the readme generator.");
-    console.log("Press 'Ctrl + C' or '⌘ Cmd + C' at any time to exit.");
-    console.log("");
+    console.log(`
+Welcome to the readme generator.
+Press 'Ctrl + C' or '⌘ Cmd + C' at any time to exit.
+`);
     inquirer.prompt([
         {
         type: 'list',
-        message: 'Are you ready to being?',
+        message: 'Are you ready to begin?',
         name: 'begin',
-        choices: ["Yes", "No"]
+        choices: ["Yes", "No"],
+        prefix: '-'
         }
     ])
     .then((response) => {

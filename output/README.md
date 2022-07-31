@@ -1,11 +1,11 @@
 
-# Project!
+# Title
 
-description
+Descript
 
 ---
 
-Created by: Robert
+Created by: me
 
 Question, comments, suggestions and constructive criticism always welcome.
 
@@ -25,20 +25,20 @@ Question, comments, suggestions and constructive criticism always welcome.
 
 ## Installation:
 
-all of the steps
+steps
 
 ---
 
 ## Usage:
 
-use this ish
+usage
 
 ---
 
 ## License:
 
-MIT
-
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
+  
 ---
 
 ## Contributing:
